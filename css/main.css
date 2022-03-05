@@ -1,0 +1,98 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --white: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2;
+    font-size: 62.5%;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--violet);
+    color: var(--white);
+}
+.bg-desktop{
+    background-image: url(../images/bg-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-movile{
+    background: none;
+}
+header{
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    grid-area: header;
+}
+.header--logo{
+    min-width: 300px;
+    max-width: 500px;
+    padding-top: 60px;
+    display: flex;
+    place-content: flex-start;
+}
+.header--logo img{
+    padding-left: 40px;
+    max-width: 200px;
+    min-width: 140px;
+}
+.header--banner{
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 300px;
+    display: flex;
+    place-content: center;
+}
+.header--banner img{
+    min-width: 280px;
+    max-width: 600px;
+}
+.home{
+    padding-top: 30px;
+    width: 100%;
+    grid-area: home;
+}
+.home--content{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+}
+.home--content h1{
+    padding: 0 30px 10px 30px;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+}
+.home--content p{
+    font-size: 21px;
+    padding: 0 30px 30px 40px;
+}
+.home--content button{
+    padding: 5px 60px 5px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: var(--white);
+    color: var(--violet);
+}
+footer{
+    padding: 40px 0 40px;
+    gap: 30px;
+    display: flex;
+    place-content: center;
+    grid-area: footer;
+}
+footer svg{
+    max-width: 40px;
+}
