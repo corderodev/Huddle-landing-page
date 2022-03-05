@@ -40,6 +40,12 @@ header{
     display: flex;
     place-content: flex-start;
 }
+.header--logo:hover{
+    cursor: pointer;
+}
+.header--logo:active{
+    transform: rotate(-1deg);
+}
 .header--logo img{
     padding-left: 40px;
     max-width: 200px;
@@ -86,6 +92,14 @@ header{
     background-color: var(--white);
     color: var(--violet);
 }
+.home--content button:hover{
+    background-color: var(--soft-magenta);
+    color: var(--white);
+    cursor: pointer;
+}
+.home--content button:active{
+    transform: scale(0.9);
+}
 footer{
     padding: 40px 0 40px;
     gap: 30px;
@@ -95,4 +109,10 @@ footer{
 }
 footer svg{
     max-width: 40px;
+}
+footer svg:hover{
+    cursor: pointer;
+}
+footer svg:active{
+    transform: scale(1.1);
 }
